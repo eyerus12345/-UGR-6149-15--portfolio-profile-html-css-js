@@ -11,11 +11,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/hobby.css" />
+    <script src =js/portifolio.js></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   </head>
   <body>
     <header class="whitebg">
       <div class="head">
-        <h3>EYERUSALEM</h3>
+          <a href="./Home.html">EYERUSALEM</a>
+      </div>
       </div>
       <nav class="nav">
         <a href="./Home.html">Home</a>
@@ -27,58 +38,67 @@
     </header>
 
     <main>
-      <div class="hbimg">
+      <section class="hbimg">
         <article class="hbimg1">
-          <h3>i love enjoy my life with coding.</h3>
+          <p>i love enjoy my life with coding.</p>
         </article>
         <article class="hbimg2">
-          <h3>
-            i love to admire the nature and also think more about the future
-          </h3>
+          <p>i love to admire the nature and also think more about the future</p>
+            
         </article>
-      </div>
+      </section>
 
-      <div class="vid">
+      <section class="vid">
         <article class="vid1">
-          <video controls src="./video/video1.mp4"></video>
-          <h6>i love to see nature like this kind of place</h6>
+          <video controls src="./video/vid1.mp4"></video>
+          <p>i love to see nature like this kind of place</p>
         </article>
         <article class="vid2">
-          <video controls src="./video/video2.mp4"></video>
-          <h6>nature is the most beatifull for ever</h6>
+          <video controls src="./video/vid2.mp4"></video>
+          <p>nature is the most beatifull for ever</p>
         </article>
-      </div>
-
-      <div class="audio">
-        <h4>my best music</h4>
-        <audio controls src="./audio/audio.m4a"></audio>
-        <aside>
+      </section>
+      <section class="audio">
+        <h6>My best music</h6>
+        <div class="audio1">
+        <div class="audio-icon"><audio controls src="./audio/audio.m4a"></audio>
+        </div>
+        <div class="aside">
           <p>this is my best music ever !</p>
-        </aside>
+        </div>
+          
+        </div>
+        
+      </section>
+          
+        
       </div>
     </main>
 
-    <footer class="whitebg">
+    <footer class="bluebg">
       <article class="contact">
-        <h6>Contact Me</h6>
+        <p>Contact Me</p>
         <form action="#">
           <i class="fa-regular fa-user"></i>
-          <input type="text" placeholder=" Name" />
+          <input type="text" placeholder=" Name" /><br>
           <i class="fa-solid fa-envelope"></i
-          ><input type="text" placeholder="Email address" />
-          <i class="fa-solid fa-message"></i
-          ><textarea name="message" id="#" cols="30" rows="15"></textarea>
+          ><input type="text" placeholder="Email address" /><br>
+          <i class="fa-solid fa-message"></i>
+          <textarea name="message" id="#"  placeholder=" Text here"cols="35" rows="8"></textarea><br>
           <button type="submit">Submit</button>
         </form>
       </article>
       <div class="foot">
         <p>&copy; 2024 - All rights reserved.</p>
-        <a href="https://instagram.com/jerusalem4698">
+        <div class="social">
+          <a href="https://instagram.com/jerusalem4698">
           <i class="fa-brands fa-instagram"></i
         ></a>
         <a href="https://linkedin.com/feed"
           ><i class="fa-brands fa-linkedin"></i
         ></a>
+      </div>
+
       </div>
     </footer>
   </body>

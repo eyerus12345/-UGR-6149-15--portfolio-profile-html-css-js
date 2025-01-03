@@ -11,11 +11,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/about.css" />
+    
+    <script src =js/about.js></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   </head>
   <body>
     <header class="whitebg">
       <div class="head">
-        <h3>EYERUSALEM</h3>
+      
+          <a href="./Home.html">EYERUSALEM</a>
+      </div>
       </div>
       <nav class="nav">
         <a href="./Home.html">Home</a>
@@ -27,15 +40,18 @@
     </header>
 
     <main>
-      <section class="abt_sec1">
+      <article class="abt_sec1">
         <div class="Bio">
           <h3>Welcome to my journey</h3>
         </div>
+      </article>
+      <section class="sec1"></section>
 
         <article class="art1">
-          <div>
+          <div class="img1">
             <img src="./image/img6.avif" alt="img1" />
           </div>
+          <div class="fam">
           <h3>Family</h3>
           <p>
             Our journey began with a simple dream: to create a home filled with
@@ -45,10 +61,12 @@
             arrived, our lives transformed into a beautiful whirlwind of
             discovery.
           </p>
+          </div>
         </article>
 
         <article class="art2">
-          <img src="./image/img2.avif" alt="img-3" />
+          <div class="img2"><img src="./image/img2.avif" alt="img-3" /></div>
+          <div class="work">
           <h3>Work Experience</h3>
           <p>
             I have three years of experience as a tutor, which I began in 12th
@@ -58,13 +76,16 @@
             communication skills but also deepened my passion for education and
             technology.
           </p>
+          </div>
         </article>
 
         <article class="art3">
-          <img src="./image/img edu.jpg" alt="img-1" />
+          <div class="img3"><img src="./image/img edu.jpg" alt="img-1" /></div>
+          <div class="edu">
           <h3>Education journey</h3>
+          
           <p>
-            I began my educational journey at Bole Community School, where I
+                I began my educational journey at Bole Community School, where I
             laid the foundation for my academic pursuits. Following elementary
             school, I continued my studies at Bole Community for high school,
             where I developed a strong interest in technology and
@@ -72,33 +93,38 @@
             successfully passed the entrance exam for university, leading me to
             pursue a degree in software engineering.
           </p>
-          <div class="abtlink">
-            <button onclick="location.href='Education.html'">see more</button>
+           <div class="abtlink">
+            <a href="Education.html">see more</a>
           </div>
+         
         </article>
-      </section>
+      </section >
     </main>
-    <footer class="whitebg">
+     <footer class="bluebg">
       <article class="contact">
-        <h6>Contact Me</h6>
+        <p>Contact Me</p>
         <form action="#">
           <i class="fa-regular fa-user"></i>
-          <input type="text" placeholder=" Name" />
+          <input type="text" placeholder=" Name" /><br>
           <i class="fa-solid fa-envelope"></i
-          ><input type="text" placeholder="Email address" />
-          <i class="fa-solid fa-message"></i
-          ><textarea name="message" id="#" cols="30" rows="15"></textarea>
+          ><input type="text" placeholder="Email address" /><br>
+          <i class="fa-solid fa-message"></i>
+          <textarea name="message" id="#"  placeholder=" Text here"cols="35" rows="8"></textarea><br>
           <button type="submit">Submit</button>
         </form>
       </article>
       <div class="foot">
         <p>&copy; 2024 - All rights reserved.</p>
-        <a href="https://instagram.com/jerusalem4698">
+        <div class="social">
+          <a href="https://instagram.com/jerusalem4698">
           <i class="fa-brands fa-instagram"></i
         ></a>
         <a href="https://linkedin.com/feed"
           ><i class="fa-brands fa-linkedin"></i
         ></a>
+      </div>
+
+        
       </div>
     </footer>
   </body>

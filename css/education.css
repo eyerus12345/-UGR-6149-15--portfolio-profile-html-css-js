@@ -1,0 +1,212 @@
+*{  
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+body {
+    font-family: "Judson", serif;
+    font-style: normal;
+    background-color: #191970;
+
+}
+header{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    display: flex;
+    margin: 5px 10px 0px 0px;
+    
+}
+
+.head{
+    font-family: "Alumni Sans Collegiate One", serif;
+    font-size: 70px;
+    font-style: italic;
+    text-align: left;
+    text-shadow: 3px 3px 6px #000000;
+    padding-left: 40px;
+}
+.head a{
+    color: rgba(236, 230, 230, 0.982);
+    letter-spacing: 2px;
+    text-decoration:none;
+}
+.nav{
+    text-align: right;
+    font-size: 28px;
+
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 5px;
+
+}
+.nav a:hover{
+    background-color:#6495ed ;
+    color: black;
+    border-radius: 10px;
+}
+.dropdown{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    display: none;
+}
+.edu-img{
+    background-image:url(../image/imged3.jpg) ;
+    background-size: cover;
+    background-position:inherit ; 
+    height: 550px;
+    margin-bottom: 45px;
+}
+.edu-img h3{
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    padding-top: 140px;
+}
+.edu1{
+    display: flex; 
+    justify-content: space-between;
+    margin: 5px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+.edu1 img{
+    width: 43%;
+    height: 400px;
+}
+.edu1 p{
+    font-size: 26px;    
+    color: white;
+    padding: 20px 20px 20px 40px;
+}
+.edu1 h4{
+
+    color: white;
+    padding: 20px 20px 20px 80px;
+    font-size: 34px;
+}
+.edu2{
+    display: flex; 
+    margin: 5px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+.edu2 h4{
+    color: white;
+    padding: 20px 20px 20px 80px;
+    font-size: 34px;
+}
+.edu2 p{
+    font-size: 26px;    
+    color: white;
+    padding: 20px 20px 20px 50px;
+}
+.edu3{
+    display: flex; 
+    margin: 5px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    padding-bottom: 75px;
+}
+.edu3 h5{
+    color: white;
+    padding: 20px 20px 20px 80px;
+    font-size: 34px;
+}
+.edu3 p{
+    font-size: 26px;    
+    color: white;
+    padding: 20px 20px 40px 50px;
+}
+.view{
+    display: inline;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    left: 125px;
+    padding-bottom: 90px;
+}
+.view a{
+    background-color: #6495ed;
+    color: black;
+    padding: 5px 35px;
+    border-radius: 8px;
+    font-style: italic;
+    font-size: 35px;
+    text-decoration: none;
+
+}
+.view a:hover{
+    background-color: #091164;
+    color: rgb(242, 238, 238);
+}
+.bluebg{
+    background-color: #0e0e3f;
+    color: white;
+    font-style: italic;
+}
+.bluebg p{
+    padding-left: 80px;
+    font-size: 35px;
+    font-style: italic; 
+}
+.bluebg form{
+    padding-left: 40px;
+    font-size: 26px;
+    justify-content: space-between;
+
+}
+.bluebg input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 2px;
+    font-size: 20px;
+    background-color:#ddf0fc;
+}
+.bluebg textarea{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 2px;
+    font-size: 20px;
+    background-color: #ddf0fc;
+}
+.bluebg button{
+    padding: 10px;
+    margin-left: 90px;
+    border-radius: 8px;
+    background-color: #6495ed;
+    color: black;
+    font-size: 25px;
+    font-style: italic;
+    
+}
+.bluebg button:hover{
+    background-color: #091164;
+    color: rgb(242, 238, 238);
+}
+.foot p{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic; 
+}
+.social{
+    text-align: center;
+}
+.social a{
+    padding: 10px;
+    font-size: 35px; 
+    color: white;
+    text-decoration: none;
+    text-align: center;
+      
+}
+.social a:hover{
+    color: #75a0f1;
+}
