@@ -2,23 +2,22 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-
 }
 
 body {
     font-family: "Judson", serif;
     font-style: normal;
     background-color: #191970;
-
 }
+
 header{
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
     display: flex;
     margin: 5px 10px 0px 0px;
-    
 }
+
 .head{
     font-family: "Alumni Sans Collegiate One", serif;
     font-size: 70px;
@@ -32,10 +31,10 @@ header{
     letter-spacing: 2px;
     text-decoration:none;
 }
+
 .nav{
     text-align: right;
     font-size: 28px;
-
 }
 
 .nav a{
@@ -44,26 +43,26 @@ header{
     padding: 10px;
     justify-content: space-between;
     margin: 5px;
-
 }
+
 .nav a:hover{
     background-color:#6495ed ;
     color: black;
     border-radius: 10px;
 }
-.dropdown{
-    position: relative;
-    top: 10%;
-    left: 10%;
-    display: none;
+
+.dropdown i {
+  padding: 10px;
+  size: 100%;
+  color: black;
 }
 
 .abt_sec1{
     background-image: url(../image/img1.jpg);
     background-size:cover;
     width: 100%;
-  
 }
+
 .abt_sec1 h3{
     color: white;
     font-size: 60px;
@@ -72,140 +71,368 @@ header{
 }
 
 .sec1{
-    margin: 5%;   
-    padding: 1%;
+    margin: 5px;   
+    padding: 10px;
 }
-.art1,
-.art2,
-.art3 {
-    display: flex;
-    text-align: center;
-    margin-bottom: 55px;
-}
+
+
 .art1 h3,
 .art2 h3,
 .art3 h3{
     color: white;
     font-size: 30px;
     padding: 8px;
-
 }
+
 .art1 p,
 .art2 p,
 .art3 p{
     color: white;
-    font-size: 25px;
     text-align: left;
     text-indent: 1cm;
-
 }
-.art1{
+
+.art1,
+.art2,
+.art3{
     display: flex;
     justify-content: space-between;
     text-align: center;
     padding-bottom: 20px;
 }
-.img1 , 
-.fam{
-    width: 50%;
-}
+
 .img1 img{
     width: 70%;
     border-radius: 5px;  
-    
 }
 
-.art2{
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-    text-align: center;
-}
-.img2 , 
-.work{
-    width: 50%;
-}
+
 .img2 img{
     width: 75%;
     border-radius: 5px;
-
 }
 
-.art3{
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-    text-align: center;
-}
-.img3 , 
-.edu{
-    width: 50%;
-}
+
+
 .img3 img{
     width: 75%;
     border-radius: 5px;
 }
+.art3 .edu .abtlink a{
+    
+    color: black;
+    font-style: italic;
+    background-color: #75a0f1;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    top: 30px;
+    left: 40px;
+
+}
+
 
 .bluebg{
-    margin-top: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
     background-color: #0e0e3f;
     color: white;
     font-style: italic;
 }
+
 .bluebg p{
-    padding: 10px;
-    padding-left: 90px;
+    padding: 10px 0px 5px 20px ;
     font-size: 30px; 
 }
-.bluebg form{
-    padding-left: 50px;
-    font-size: 20px;
 
+.bluebg form{
+    margin: 10px;
+    font-size: 20px;
 }
+
 .bluebg input{
-    padding: 8px;
+    padding: 5px;
     margin: 10px;
     border-radius: 2px;
     font-size: 15px;
     background-color:#ddf0fc;
 }
+
 .bluebg textarea{
-    padding: 10px;
+    padding: 5px;
     margin: 10px;
     border-radius: 2px;
     font-size: 15px;
     background-color: #ddf0fc;
 }
+
 .bluebg button{
     padding: 10px;
-    margin-left: 90px;
+    margin-left:7%;
     border-radius: 8px;
     background-color: #6495ed;
     color: black;
     font-size: 20px;
     font-style: italic;
-    
 }
+
 .bluebg button:hover{
     background-color: #091164;
     color: rgb(242, 238, 238);
 }
+
 .foot p{
     text-align: center;
     font-size: 20px;
     font-style: italic; 
 }
+
 .social{
     text-align: center;
 }
+
 .social a{
     padding: 8px;
     font-size: 30px; 
     color: white;
     text-decoration: none;
     text-align: center;
-      
 }
+
 .social a:hover{
     color: #75a0f1;
 }
+
+/* Media Queries */
+@media (max-width: 480px) { /* Mobile */
+    header {
+        flex-direction: column;
+    }
+    .head {
+    font-size: 30px;
+    margin: auto;
+  } 
+    .abt_sec1 h3 {
+        font-size: 30px;
+    }
+   .art1 p, .art2 p, .art3 p {
+    order: 2;
+    font-size: 13px;
+   }
+    .art1 h3, .art2 h3, .art3 h3 {
+        order: 1    ;
+        font-size: 25px ;
+    }
+    .art1 .img1, .art2 .img2, .art3 .img3 {
+        order: 3;
+        width: 90%;
+        margin: auto;
+        padding: 5px;
+    }  
+    .art3 .edu .abtlink a {
+        
+        font-size: 15px;
+    }  
+    .nav {
+        display: none;
+    }
+
+
+    .abt_sec1 h3 {
+        font-size: 25px;
+    }
+
+    .art1, .art2, .art3 {
+        flex-direction: column;
+        text-align: left;
+        margin: 5px;
+    }
+    .fam , .work , .edu {
+        width: 100%;
+    }
+    .img1, .img2, .img3 {
+        width: 100%;
+    }
+    
+  .contact input,
+  .contact textarea {
+    font-size: 14px;
+  }
+
+  .contact button {
+    font-size: 13px;
+  }
+
+  footer .social a {
+    font-size: 15px;
+  }
+
+  footer {
+    text-align: left; 
+  }
+  .foot {
+    text-align: center;
+  }
+
+  .social {
+    text-align: center;
+  }
+  
+  .dropdown {
+    display: block; 
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    margin: 5px; /
+  }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: gray;
+    }
+
+    .dropdown.show .dropdown-content {
+    display: block;
+    }
+    .dropdown-content.show {
+        display: block; 
+    }
+    }
+
+@media (min-width: 481px) and (max-width:1023px){ /* Tablet */ 
+    .head{
+        font-size: 50px;
+        margin: auto;
+    }
+    .nav {
+        display: none;
+    }
+    .abt_sec1 h3 {
+        font-size: 45px;
+    }
+    
+  .dropdown {
+    display: block; 
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    margin: 5px; /
+  }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: gray;
+    }
+
+    .dropdown.show .dropdown-content {
+    display: block;
+    }
+    .dropdown-content.show {
+        display: block; 
+    }
+    }
+
+
+    .abt_sec1 h3 {
+        font-size: 45px;
+    }
+    
+    .fam p .work p .edu p {
+        font-size: 18px;
+    }
+    .fam , 
+    .img1{
+        width: 50%;
+    }
+    .work , 
+    .img2{
+        width: 50%;
+    }
+    .edu , 
+    .img3{
+        width: 50%;
+    }
+    .fam , .work , .edu {
+        width: 100%;
+    }
+    .img1, .img2, .img3 {
+        width: 100%;
+    }
+
+    .bluebg {
+        font-size: 18px;
+    }
+
+    .bluebg p {
+        font-size: 20px;
+    }
+
+@media (min-width: 1024px) { /* Desktop */
+    
+    .dropdown {
+    display: none; /* Hide dropdown */
+  }
+  .head{
+    font-size: 70px;
+  }
+  .abt_sec1 h3 {
+    font-size: 60px;
+  }
+  .fam p , .work p , .edu p {   
+    font-size: 25px;
+  }
+  h3{
+    font-size: 35px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+  }
+
+
+  footer {
+    padding: 40px 100px;
+    text-align: left; /* Align footer content to the left */
+  }
+
+  .foot {
+    text-align: center;
+  }
+
+  .social {
+    text-align: center; /* Align social icons to the center */
+  }
+}
+
+

@@ -51,11 +51,11 @@ header{
     color: black;
     border-radius: 10px;
 }
-.dropdown{
-    position: relative;
-    top: 10%;
-    left: 10%;
-    display: none;
+
+.dropdown i {
+  padding: 10px;
+  size: 100%;
+  color: black;
 }
 main{
     margin: 5px;
@@ -91,32 +91,7 @@ main{
 .hbimg2 img{
     width: 100%;
 }
-.vid{
-    flex-wrap: wrap;
-    display: flex;
-    text-align: center;
-    margin: 25px;
-    color: white;
-    font-size: 20px;
-    
-}
-.vid1 ,
-.vid2{
-    
-    width: 50%;
-    justify-content: space-between;
-    text-align: left;
-}
-.vid1 video{
-    max-width: 100%;
-    padding: 10px;
-    
-}
-.vid2 video{
-    max-width: 100%;
-    padding: 10px;
-    
-}
+
 .audio{
     flex-wrap: wrap; 
     font-size: 20px;
@@ -138,32 +113,31 @@ main{
 .aside{
     width: 28%;
 }
-
 .bluebg{
-    margin-top: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
     background-color: #0e0e3f;
     color: white;
     font-style: italic;
 }
 .bluebg p{
-    padding: 10px;
-    padding-left: 90px;
+    padding: 10px 0px 5px 20px ;
     font-size: 30px; 
 }
 .bluebg form{
-    padding-left: 50px;
+    margin: 10px;
     font-size: 20px;
 
 }
 .bluebg input{
-    padding: 8px;
+    padding: 5px;
     margin: 10px;
     border-radius: 2px;
     font-size: 15px;
     background-color:#ddf0fc;
 }
 .bluebg textarea{
-    padding: 10px;
+    padding: 5px;
     margin: 10px;
     border-radius: 2px;
     font-size: 15px;
@@ -171,7 +145,7 @@ main{
 }
 .bluebg button{
     padding: 10px;
-    margin-left: 90px;
+    margin-left:7%;
     border-radius: 8px;
     background-color: #6495ed;
     color: black;
@@ -201,4 +175,57 @@ main{
 }
 .social a:hover{
     color: #75a0f1;
+}
+
+/* Media Queries */
+@media (max-width: 480px) { /* Mobile */
+    header {
+        flex-direction: column;
+    }
+    .head {
+    font-size: 30px;
+    margin: auto;
+  } 
+  .nav {
+    display: none;
+  }
+  
+  .dropdown {
+    display: block; 
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    margin: 5px; /
+  }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: gray;
+    }
+
+    .dropdown.show .dropdown-content {
+    display: block;
+    }
+    .dropdown-content.show {
+        display: block; 
+    }
+    .hbimg{
+        flex: none;
+    }
+
+
 }

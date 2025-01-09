@@ -51,95 +51,46 @@ header{
     color: black;
     border-radius: 10px;
 }
-.dropdown{
-    position: relative;
-    top: 10%;
-    left: 10%;
-    display: none;
+.dropdown i {
+  padding: 10px;
+  size: 100%;
+  color: black;
 }
 .edu-img{
     background-image:url(../image/imged3.jpg) ;
     background-size: cover;
-    background-position:inherit ; 
-    height: 550px;
-    margin-bottom: 45px;
-}
-.edu-img h3{
-    font-size: 70px;
+    padding: 10%;
+    color: white;
+    font-size: 60px;
     text-align: center;
-    color: white;
-    padding-top: 140px;
-}
-.edu1{
-    display: flex; 
-    justify-content: space-between;
-    margin: 5px;
-    padding-bottom: 10px;
-    padding-top: 30px;
-}
-.edu1 img{
-    width: 43%;
-    height: 400px;
-}
-.edu1 p{
-    font-size: 26px;    
-    color: white;
-    padding: 20px 20px 20px 40px;
-}
-.edu1 h4{
 
-    color: white;
-    padding: 20px 20px 20px 80px;
-    font-size: 34px;
 }
-.edu2{
+.edu1 ,
+.edu2 ,
+.edu3{ 
     display: flex; 
-    margin: 5px;
-    padding-bottom: 10px;
-    padding-top: 40px;
-}
-.edu2 h4{
     color: white;
-    padding: 20px 20px 20px 80px;
-    font-size: 34px;
+    font-size: 20px;
+    text-indent: 1cm;
+    padding: 20px 10px 30px;
+    justify-content:space-between;
+
 }
-.edu2 p{
-    font-size: 26px;    
-    color: white;
-    padding: 20px 20px 20px 50px;
+.img1, .img2, .img3{
+    width: 70%;
 }
-.edu3{
-    display: flex; 
-    margin: 5px;
-    padding-bottom: 10px;
-    padding-top: 40px;
-    padding-bottom: 75px;
-}
-.edu3 h5{
-    color: white;
-    padding: 20px 20px 20px 80px;
-    font-size: 34px;
-}
-.edu3 p{
-    font-size: 26px;    
-    color: white;
-    padding: 20px 20px 40px 50px;
-}
+
 .view{
-    display: inline;
-    justify-content: center;
-    position: relative;
-    top: 40px;
-    left: 125px;
-    padding-bottom: 90px;
+    justify-content: space-between;
+    padding: 5%;
 }
 .view a{
     background-color: #6495ed;
     color: black;
-    padding: 5px 35px;
+    padding: 5px 10px;
     border-radius: 8px;
     font-style: italic;
-    font-size: 35px;
+    font-size: 30px;
     text-decoration: none;
 
 }
@@ -147,43 +98,44 @@ header{
     background-color: #091164;
     color: rgb(242, 238, 238);
 }
+
 .bluebg{
+    flex-wrap: wrap;
+    margin-top: 30px;
     background-color: #0e0e3f;
     color: white;
     font-style: italic;
 }
 .bluebg p{
-    padding-left: 80px;
-    font-size: 35px;
-    font-style: italic; 
+    padding: 10px 0px 5px 20px ;
+    font-size: 30px; 
 }
 .bluebg form{
-    padding-left: 40px;
-    font-size: 26px;
-    justify-content: space-between;
+    margin: 10px;
+    font-size: 20px;
 
 }
 .bluebg input{
-    padding: 10px;
+    padding: 5px;
     margin: 10px;
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 15px;
     background-color:#ddf0fc;
 }
 .bluebg textarea{
-    padding: 10px;
+    padding: 5px;
     margin: 10px;
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 15px;
     background-color: #ddf0fc;
 }
 .bluebg button{
     padding: 10px;
-    margin-left: 90px;
+    margin-left:7%;
     border-radius: 8px;
     background-color: #6495ed;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-style: italic;
     
 }
@@ -193,15 +145,15 @@ header{
 }
 .foot p{
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-style: italic; 
 }
 .social{
     text-align: center;
 }
 .social a{
-    padding: 10px;
-    font-size: 35px; 
+    padding: 8px;
+    font-size: 30px; 
     color: white;
     text-decoration: none;
     text-align: center;
@@ -210,3 +162,263 @@ header{
 .social a:hover{
     color: #75a0f1;
 }
+
+
+/* Media Query for Mobile */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        
+        }
+    .head {
+        font-size: 30px;
+        margin: auto;
+    } 
+    .edu-img h3{
+        font-size: 30px;
+    }
+    .edu1, .edu2, .edu3{
+        flex-direction: column;
+        text-align: left;
+        margin: 5px;
+    }
+    .edu1 p, .edu2 p, .edu3 p {
+        
+        font-size: 13px;
+    }
+
+    .edu1 h4, .edu2 h4, .edu3 h4 {
+        width: 100%;
+        font-size: 20px;
+
+    }
+    .hg, .uv, .pr{
+        order: 1;
+    }
+
+    .img1 img, .img2 img , .img3 img{
+         
+        width: 80%;
+        margin: auto;
+    }
+    
+    .img1 , .img2  , .img3 {
+        order: 2; 
+    }
+
+    .nav{
+        display: none;
+    }
+    .contact input,
+  .contact textarea {
+    font-size: 14px;
+  }
+
+  .contact button {
+    font-size: 13px;
+  }
+
+  footer .social a {
+    font-size: 15px;
+  }
+
+  footer {
+    text-align: left; 
+  }
+  .foot {
+    text-align: center;
+  }
+
+  .social {
+    text-align: center;
+  }
+  
+  .dropdown {
+    display: block; 
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    margin: 5px; /
+  }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: gray;
+    }
+
+    .dropdown.show .dropdown-content {
+    display: block;
+    }
+    .dropdown-content.show {
+        display: block; 
+    }
+    .view a{
+        order: 4;
+        font-size: 15px;
+        padding: 3px 5px;
+    }
+    }
+@media (min-width: 481px) and (max-width:1023px){ /* Tablet */
+     
+    .head{
+        font-size: 50px;
+        margin: auto;
+    }
+    .nav {
+        display: none;
+    }
+    .abt_sec1 h3 {
+        font-size: 45px;
+    }
+    
+  .dropdown {
+    display: block; 
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    margin: 5px; /
+  }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: gray;
+    }
+
+    .dropdown.show .dropdown-content {
+    display: block;
+    }
+    .dropdown-content.show {
+        display: block; 
+    }
+    
+    .edu-img{
+        font-size: 45px;
+    }
+    .edu1 , .edu2 , .edu3 {
+        display: flex;
+        padding: 10px;
+        
+    }
+    .img1 , .hg{
+        width: 45%;
+    }
+    .img2 , .uv{
+        width: 45%;
+    }
+    .img3 , .pr{
+        width: 45%;
+    }
+    img{
+        width: 100%;
+    }
+    h4{
+        font-size: 25px;
+    }
+    p{
+        font-size: 16px;
+    }
+
+    .bluebg {
+        font-size: 18px;
+    }
+
+    .bluebg p {
+        font-size: 20px;
+    }
+    .view a{
+        order: 4;
+        font-size: 20px;
+        padding: 4px 8px;
+    }
+}
+
+@media (min-width: 1024px) { /* Desktop */
+    
+    .dropdown {
+    display: none; /* Hide dropdown */
+  }
+  .head{
+    font-size: 70px;
+  }
+  .edu_img h3 {
+    font-size: 60px;
+  }
+  .edu1 , .edu2, .edu3{
+    display: flex;
+    padding: 15px;
+  }.edu1 , .edu2 , .edu3 {
+        display: flex;
+        padding: 10px;
+        
+    }
+    .img1 , .hg{
+        width: 45%;
+    }
+    .img2 , .uv{
+        width: 45%;
+    }
+    .img3 , .pr{
+        width: 45%;
+    }
+    img{
+        width: 100%;
+    }
+    h4{
+        font-size: 30px;
+        padding: 10px;
+    }
+    p{
+        font-size: 25px;
+    }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+  }
+
+
+  footer {
+    padding: 40px 100px;
+    text-align: left; /* Align footer content to the left */
+  }
+
+  .foot {
+    text-align: center;
+  }
+
+  .social {
+    text-align: center; /* Align social icons to the center */
+  }
+}
+
+
+

@@ -1,30 +1,31 @@
-*{
+*{  
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 
 }
+
 body {
     font-family: "Judson", serif;
     font-style: normal;
     background-color: #191970;
-    margin: 0px;
-    padding: 0px;
+
 }
 header{
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    padding: 0px 5px 1px 70px;
-    margin-bottom: 0px;
+    display: flex;
+    margin: 5px 10px 0px 0px;
+    
 }
 .head{
     font-family: "Alumni Sans Collegiate One", serif;
     font-size: 70px;
     font-style: italic;
-    display: flex;
     text-align: left;
-    text-shadow: 3px 2px 4px #000000;
+    text-shadow: 3px 3px 6px #000000;
+    padding-left: 40px;
 }
 .head a{
     color: rgba(236, 230, 230, 0.982);
@@ -32,157 +33,137 @@ header{
     text-decoration:none;
 }
 .nav{
-    display: flex;
     text-align: right;
-    font-size: 26px;
+    font-size: 28px;
+
 }
 
 .nav a{
     color: white;
     text-decoration: none;
     padding: 10px;
-    margin-right: 35px;
     justify-content: space-between;
-    text-align: right;
+    margin: 5px;
 
 }
 .nav a:hover{
     background-color:#6495ed ;
     color: black;
-    border-radius: 8px;
+    border-radius: 10px;
+}
+  
+.dropdown i {
+  padding: 10px;
+  size: 100%;
+  color: black;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.cv-img {
+
+.files{
+    margin: 5px;
+}
+.cv-img{
     background-image: url(../image/cv.png);
-    max-width: 100%; /* Set a maximum width for the image container */
-    margin: 0 auto; /* Center the container */ /* Hide overflow if the image is larger */
-    height: 600px;
     background-size: cover;
-    overflow: hidden;
-}
-
-.cv-img img {
-  width: 90%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove bottom space from inline images */
-}
-
-.cv-img h3{
-    font-size: 70px;
-    color: white;
+    padding-bottom: 40%;
     text-align: center;
+    color: white;
+    font-size: 60px;
+
+}
+
+.cv1 ,
+.cv2{
+    color: white;
+    
+}
+
+.hg a{ 
+    background-color: #6495ed;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 25px;
+    color: black;
     position: relative;
     top: 35px;
-    left: 50px;
-    
-}
-.cv1{
-    margin: 5px;
-    display: flex; 
-    justify-content: space-between;
-    padding-top: 60px;
-}
-.cv1 img{
-    width: 53%;
-    height: 350px
-}
-.cv1 h5 {
-    font-size: 40px;
-    color: white;
-    padding-left: 60px;
- 
-}
-.cv1 p{
-    color: white;
-    font-size: 26px;
-    padding: 20px 15px 40px 40px;
-}
-.cv1 a{
-    background-color: #6495ed;
-    color:black;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 30px;
-    font-style: italic;
-    text-decoration: none;
-    position: relative;
-    top: 20px;
-    left: 50px;
+    left: 30px;
     
 }
 
-.cv2{
-    margin: 5px;
-    display: flex; 
-    justify-content: space-between;
-    padding-top: 60px;
-    padding-bottom: 50px;
+.img2, .img1{
+    width: 80%;
+    border-radius: 3px;
+    margin: auto;
+    padding: 5%;
 }
-.cv2 img{
-    width: 50%;
-    height: 350px
+.cv0 p , .hg p{
+    text-align: left;
+    font-size: 20px;
 }
-.cv2 h5 {
-    font-size: 40px;
-    color: white;
-    padding-left: 60px;
- 
+.cv0 h3, .hg h3{
+    padding: 20px;
+    font-size: 30px;
+
 }
-.cv2 p{
-    color: white;
-    font-size: 26px;
-    padding: 20px 15px 40px 40px;
-}
-.cv2 a{
+.cv0 a{
     background-color: #6495ed;
-    color:black;
     padding: 10px;
     border-radius: 8px;
-    font-size: 30px;
-    font-style: italic;
     text-decoration: none;
+    font-style: italic;
+    font-size: 25px;
+    color: black;
     position: relative;
-    top: 20px;
-    left: 50px;
+    top: 35px;
+    left: 30px;
     
 }
+.cv0{
+    padding-bottom: 10px;
+}
 .bluebg{
+    flex-wrap: wrap;
+    margin-top: 30px;
     background-color: #0e0e3f;
     color: white;
     font-style: italic;
 }
 .bluebg p{
-    padding-left: 80px;
-    font-size: 35px;
-    font-style: italic; 
+    padding: 10px 0px 5px 20px ;
+    font-size: 30px; 
 }
 .bluebg form{
-    padding-left: 40px;
-    font-size: 26px;
-    justify-content: space-between;
+    margin: 10px;
+    font-size: 20px;
 
 }
 .bluebg input{
-    padding: 10px;
+    padding: 5px;
     margin: 10px;
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 15px;
     background-color:#ddf0fc;
 }
 .bluebg textarea{
-    padding: 10px;
+    padding: 5px;
     margin: 10px;
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 15px;
     background-color: #ddf0fc;
 }
 .bluebg button{
     padding: 10px;
-    margin-left: 90px;
+    margin-left:7%;
     border-radius: 8px;
     background-color: #6495ed;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-style: italic;
     
 }
@@ -192,15 +173,15 @@ header{
 }
 .foot p{
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-style: italic; 
 }
 .social{
     text-align: center;
 }
 .social a{
-    padding: 10px;
-    font-size: 35px; 
+    padding: 8px;
+    font-size: 30px; 
     color: white;
     text-decoration: none;
     text-align: center;
@@ -208,4 +189,255 @@ header{
 }
 .social a:hover{
     color: #75a0f1;
+}
+
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .head {
+        font-size: 30px; /* Reduced font size */
+        margin: auto;
+    }
+    .nav{
+      display: none;
+    }
+
+    .cv-img h3 {
+        font-size: 30px; 
+    }
+
+    .cv1 h3, .cv2 h3{
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+        padding: 10px; 
+    }
+    .cv1 p, .cv2 p{
+      order: 2;
+      font-size: 13px;
+      padding: 5px;
+    }
+
+    .cv1 img, .cv2 img {
+        order: 3;
+        width: 90%; 
+        margin: auto;
+        padding: 5px;
+    }
+    .hg a, .cv0 a{
+      
+      font-size: 15px;
+      padding-bottom:5px;
+
+    }
+ 
+  .contact input,
+  .contact textarea {
+    font-size: 14px;
+  }
+
+  .contact button {
+    font-size: 13px;
+  }
+
+  footer .social a {
+    font-size: 15px;
+  }
+
+  footer {
+    text-align: left; 
+  }
+  .foot {
+    text-align: center;
+  }
+
+  .social {
+    text-align: center;
+  }
+  
+  .dropdown {
+    display: block; 
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    margin: 5px; /
+  }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: gray;
+    }
+
+    .dropdown.show .dropdown-content {
+    display: block;
+    }
+    .dropdown-content.show {
+        display: block; 
+    }
+}
+
+/* Tablet (max-width: 768px) */
+@media (min-width: 481px) and (max-width: 1023px) {
+    header {
+        flex-direction: column;
+        
+    }
+
+    .head {
+        font-size: 50px; 
+        margin: auto;
+    }
+    .cv-img h3{
+        font-size: 45px;
+    }
+
+    .nav {
+        display:none
+    }
+    .dropdown{
+        display: block;
+    }
+    .dropdown {
+    display: block; 
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    margin: 5px; /
+  }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: gray;
+    }
+
+    .dropdown.show .dropdown-content {
+    display: block;
+    }
+    .dropdown-content.show {
+        display: block; 
+    }
+    
+  .contact input,
+  .contact textarea {
+    font-size: 18px;
+  }
+
+  .contact button {
+    font-size: 16px;
+  }
+
+  footer .social a {
+    font-size: 25px;
+  }
+
+  footer {
+    text-align: left; 
+  }
+  .foot {
+    text-align: center;
+  }
+
+  .social {
+    text-align: center;
+  }
+  .cv1, .cv2{
+    display: flex;
+    padding: 10px;
+  }
+  .cv1 img , .cv2 img{
+    width: 100%;
+  }
+  .cv1 a , .cv2 a{
+    font-size: 18px;
+    padding: 5px;
+  }
+  .cv1 h3, .cv2 h3{
+    font-size: 25px;
+  }
+  .cv1 p, .cv2 p{
+    font-size: 16px;
+  }
+}
+
+/* Desktop (min-width: 769px) */
+@media (min-width: 1024px) {
+    
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+  }
+  .dropdown{
+    display: none;
+  }
+  .cv1, .cv2{
+    display: flex;
+    padding: 10px;
+  }
+  .hg, .img1{
+    font-size: 25px;
+    padding: 10px;
+    width: 50%;
+  }
+  .cv1 p, .cv2 p{
+    font-size: 25px;
+    padding: 5px;
+  }
+  .cv0, .img2{
+    font-size: 25px;
+    padding: 10px;
+    width: 50%;
+  }
+  h3{
+    font-size: 70px;
+  }
+  
+  .cv1 h3, .cv2 h3{
+    font-size: 50px;
+  }
+
+  footer {
+    padding: 40px 100px;
+    text-align: left; /* Align footer content to the left */
+  }
+
+  .foot {
+    text-align: cover;
+  }
+
+  .social {
+    text-align: center; /* Align social icons to the center */
+  }
 }
