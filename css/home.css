@@ -419,6 +419,7 @@ header {
 }
 
 /* Desktop and tablet landscape */
+
 @media (min-width: 1024px) {
   
   .dropdown {
