@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    
 }
 
 body {
@@ -128,8 +129,8 @@ header{
     padding: 10px;
     border-radius: 8px;
     position: relative;
-    top: 30px;
-    left: 40px;
+    top: 1em;
+    left: 1em;
 
 }
 
@@ -206,6 +207,7 @@ header{
 }
 
 /* Media Queries */
+
 @media (max-width: 480px) { /* Mobile */
     header {
         flex-direction: column;
@@ -218,27 +220,34 @@ header{
         font-size: 30px;
     }
    .art1 p, .art2 p, .art3 p {
-    order: 2;
     font-size: 13px;
    }
     .art1 h3, .art2 h3, .art3 h3 {
-        order: 1    ;
         font-size: 25px ;
     }
-    .art1 .img1, .art2 .img2, .art3 .img3 {
-        order: 3;
+    .img1, .img2,  .img3 {
+        order: 2;
         width: 90%;
         margin: auto;
         padding: 5px;
     }  
-    .art3 .edu .abtlink a {
-        
+    .art3 .abtlink a {       
         font-size: 15px;
-    }  
+    } 
+    .work , .fam, .edu{
+        order: 1;
+    } 
     .nav {
         display: none;
     }
-
+    .abtlink a{
+        font-size: 15;
+        padding: 3px;
+        margin: auto;
+    }
+    .img3{
+        padding-top: 30px;
+    }
 
     .abt_sec1 h3 {
         font-size: 25px;
@@ -246,7 +255,6 @@ header{
 
     .art1, .art2, .art3 {
         flex-direction: column;
-        text-align: left;
         margin: 5px;
     }
     .fam , .work , .edu {
@@ -315,7 +323,7 @@ header{
     }
     }
 
-@media (min-width: 481px) and (max-width:1023px){ /* Tablet */ 
+@media (min-width: 481px) and (max-width:1023px){ /* Tablet portraite and mobile landscape*/ 
     .head{
         font-size: 50px;
         margin: auto;
@@ -360,7 +368,7 @@ header{
     .dropdown-content.show {
         display: block; 
     }
-    }
+    
 
 
     .abt_sec1 h3 {
@@ -396,12 +404,18 @@ header{
     .bluebg p {
         font-size: 20px;
     }
+}
 
-@media (min-width: 1024px) { /* Desktop */
-    
-    .dropdown {
-    display: none; /* Hide dropdown */
+@media (min-width: 1024px) { /* Desktop and tablet landscape*/
+   .dropdown {
+    display: none; 
   }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+  } 
   .head{
     font-size: 70px;
   }
@@ -411,19 +425,30 @@ header{
   .fam p , .work p , .edu p {   
     font-size: 25px;
   }
+  .img1 , .fam{
+    width: 45%;
+  }
+  .img2 , .work{
+    width: 45%;
+  }
+  .img3 , .edu{
+    width: 45%;
+  }
   h3{
     font-size: 35px;
   }
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    font-size: 28px;
+  .dropdown-content, .dropdown i{
+    display: none;
+  }
+  
+  img{
+    width: 100%;
   }
 
 
   footer {
     padding: 40px 100px;
-    text-align: left; /* Align footer content to the left */
+    text-align: left; 
   }
 
   .foot {
@@ -431,7 +456,7 @@ header{
   }
 
   .social {
-    text-align: center; /* Align social icons to the center */
+    text-align: center; 
   }
 }
 

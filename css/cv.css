@@ -191,15 +191,17 @@ header{
     color: #75a0f1;
 }
 
+/* media query */
 
-@media (max-width: 480px) {
+
+@media (max-width: 480px) {/* mobile*/
     header {
         flex-direction: column;
         margin: 5px;
     }
 
     .head {
-        font-size: 30px; /* Reduced font size */
+        font-size: 30px; 
         margin: auto;
     }
     .nav{
@@ -211,9 +213,9 @@ header{
     }
 
     .cv1 h3, .cv2 h3{
-        flex-direction: column;
+      order: 1;
         align-items: center;
-        font-size: 18px;
+        font-size: 25px;
         padding: 10px; 
     }
     .cv1 p, .cv2 p{
@@ -294,7 +296,7 @@ header{
     }
 }
 
-/* Tablet (max-width: 768px) */
+/* Tablet portraite and mobile landscape */
 @media (min-width: 481px) and (max-width: 1023px) {
     header {
         flex-direction: column;
@@ -391,7 +393,7 @@ header{
   }
 }
 
-/* Desktop (min-width: 769px) */
+/* Desktop and tablet landscape*/
 @media (min-width: 1024px) {
     
   .nav {
@@ -430,7 +432,7 @@ header{
 
   footer {
     padding: 40px 100px;
-    text-align: left; /* Align footer content to the left */
+    text-align: left; 
   }
 
   .foot {
@@ -438,6 +440,6 @@ header{
   }
 
   .social {
-    text-align: center; /* Align social icons to the center */
+    text-align: center; 
   }
 }

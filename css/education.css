@@ -58,6 +58,7 @@ header{
 }
 .edu-img{
     background-image:url(../image/imged3.jpg) ;
+    width: 100%;
     background-size: cover;
     padding: 10%;
     color: white;
@@ -164,7 +165,9 @@ header{
 }
 
 
-/* Media Query for Mobile */
+/* Media Query for 
+Mobile */
+
 @media (max-width: 480px) {
     header {
         flex-direction: column;
@@ -272,7 +275,7 @@ header{
         padding: 3px 5px;
     }
     }
-@media (min-width: 481px) and (max-width:1023px){ /* Tablet */
+@media (min-width: 481px) and (max-width:1023px){ /* Tablet portraite and mobile landscape */
      
     .head{
         font-size: 50px;
@@ -341,6 +344,7 @@ header{
     }
     h4{
         font-size: 25px;
+        padding: 10px;
     }
     p{
         font-size: 16px;
@@ -360,10 +364,10 @@ header{
     }
 }
 
-@media (min-width: 1024px) { /* Desktop */
+@media (min-width: 1024px) { /* Desktop and tablet landscape*/
     
     .dropdown {
-    display: none; /* Hide dropdown */
+    display: none; 
   }
   .head{
     font-size: 70px;
@@ -408,7 +412,7 @@ header{
 
   footer {
     padding: 40px 100px;
-    text-align: left; /* Align footer content to the left */
+    text-align: left; 
   }
 
   .foot {
@@ -416,7 +420,7 @@ header{
   }
 
   .social {
-    text-align: center; /* Align social icons to the center */
+    text-align: center; 
   }
 }
 

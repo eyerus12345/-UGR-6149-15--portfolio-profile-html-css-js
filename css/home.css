@@ -69,6 +69,7 @@ header {
   background-image: url(../image/imgh.jpg);
   background-size: cover;
   width: 100%;
+  height: auto;
 }
 .sec-1 img{
     width: 100%;
@@ -112,7 +113,8 @@ header {
   margin: 10px;
 }
 .img img {
-  width: 70%;
+  width:70%;
+  height: auto;
   border-radius: 5px;
 
 }
@@ -196,7 +198,7 @@ header {
 }
 /* Media Queries */
 
-/* Mobile (max-width: 480px) */
+/* Mobile  */
 @media (max-width: 480px) {
   body {
     font-size: 13px; 
@@ -218,23 +220,24 @@ header {
     margin: 5px;
     
   }
-  .sec-2 .img{
-    order: 3;
-  }
-  
+
   .img img {
     width: 60%;
     display: block;
     margin: 0 auto; 
   }
-  .sec-2 .bio p {
-    order: 2;
+  .sec-2 p {
     width: 100%;
     font-size: 13px;
   }
-  .sec-2 .bio h3 {
-    order: 1;
+  .sec-2  h3 {
     font-size: 16px;
+  }
+  .bio {
+    order: 1;
+  }
+  .img img{
+    order: 2;
   }
 
   .contact input,
@@ -251,7 +254,7 @@ header {
   }
 
   footer {
-    text-align: left; /* Keep the footer aligned to the left on mobile */
+    text-align: left; 
   }
 
   .foot {
@@ -259,7 +262,7 @@ header {
   }
 
   .social {
-    text-align: center; /* Align social icons to the center */
+    text-align: center; 
   }
 
  
@@ -272,11 +275,11 @@ header {
   }
   
   .dropdown {
-    display: block; /* Show dropdown */
+    display: block; 
     position: absolute;
     top: 2px;
     left: 0px;
-    margin: 5px; /* Align dropdown button to the left */
+    margin: 5px; 
   }
   
 .dropdown-content {
@@ -302,19 +305,19 @@ header {
   display: block;
 }
 .dropdown-content.show {
-    display: block; /* Show the dropdown when it has the 'show' class */
+    display: block; 
 }
 }
 
 /* Tablet Portrait and Mobile Landscape (max-width: 768px) */
 @media (min-width: 481px) and (max-width: 1023px) {
    body {
-    font-size: 20px; /* Base font size for mobile */
+    font-size: 20px; 
   }
 
   .head {
     font-size: 50px;
-    margin: auto; /* Reduced font size */
+    margin: auto; 
   }
   .nav{
     display: none;
@@ -322,7 +325,7 @@ header {
 
   .sec-1 h3 {
     font-size: 40px;
-    /* Reduced font size */
+    
   }
   
   .sec-2 {
@@ -363,7 +366,7 @@ header {
   }
 
   footer {
-    text-align: left; /* Keep the footer aligned to the left on mobile */
+    text-align: left; 
   }
 
   .foot {
@@ -371,7 +374,7 @@ header {
   }
 
   .social {
-    text-align: center; /* Align social icons to the center */
+    text-align: center; 
   }
 
  
@@ -381,11 +384,11 @@ header {
   }
   
   .dropdown {
-    display: block; /* Show dropdown */
+    display: block; 
     position: absolute;
     top: 12px;
     left: 0px;
-    margin: 10px; /* Align dropdown button to the left */
+    margin: 10px; 
   }
   
 .dropdown-content {
@@ -411,15 +414,15 @@ header {
   display: block;
 }
 .dropdown-content.show {
-    display: block; /* Show the dropdown when it has the 'show' class */
+    display: block; 
 }
 }
 
-/* Desktop (min-width: 1024px) */
+/* Desktop and tablet landscape */
 @media (min-width: 1024px) {
-  /* Hide dropdown and display normal navigation */
+  
   .dropdown {
-    display: none; /* Hide dropdown */
+    display: none; 
   }
 
   .nav {
@@ -446,7 +449,7 @@ header {
 
   footer {
     padding: 40px 100px;
-    text-align: left; /* Align footer content to the left */
+    text-align: left; 
   }
 
   .foot {
@@ -454,6 +457,6 @@ header {
   }
 
   .social {
-    text-align: center; /* Align social icons to the center */
+    text-align: center; 
   }
 }
